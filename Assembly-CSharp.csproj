@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,20 +47,32 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\SampleScene\NaMesh.cs" />
-    <Compile Include="Assets\Scripts\cubsHendler.cs" />
-    <Compile Include="Assets\Scripts\triggerHandler.cs" />
-    <Compile Include="Assets\Scripts\EnemyVision.cs" />
-    <Compile Include="Assets\Scripts\dangerWalking.cs" />
-    <Compile Include="Assets\Scripts\C.cs" />
-    <Compile Include="Assets\Scripts\Play.cs" />
-    <Compile Include="Assets\Scripts\Exit.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\NavMesh\NavMeshSurface.cs" />
+    <Compile Include="Assets\Scripts\Reycast\NaMesh.cs" />
+    <Compile Include="Assets\Scripts\NavMesh\NavMeshModifier.cs" />
+    <Compile Include="Assets\Scripts\CubsHendler.cs" />
+    <Compile Include="Assets\Scripts\Bayker.cs" />
+    <Compile Include="Assets\Scripts\NavMesh\NavMeshLink.cs" />
+    <Compile Include="Assets\Scripts\TriggerHandler.cs" />
+    <Compile Include="Assets\Scripts\Reycast\EnemyVision.cs" />
+    <Compile Include="Assets\Scripts\DangerWalking.cs" />
+    <Compile Include="Assets\Scripts\NavMesh\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\ExitButtonClick.cs" />
+    <Compile Include="Assets\Scripts\PlayButtonClick.cs" />
+    <Compile Include="Assets\Scripts\Point5.cs" />
+    <Compile Include="Assets\Scripts\Point2.cs" />
+    <Compile Include="Assets\Scripts\Point7.cs" />
+    <Compile Include="Assets\Scripts\Point6.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -644,6 +656,12 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>

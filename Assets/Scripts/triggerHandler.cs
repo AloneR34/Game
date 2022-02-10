@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class triggerHandler : MonoBehaviour
+public class TriggerHandler : MonoBehaviour
 {
     public Rigidbody danger1rridg;
     public Rigidbody danger2rridg;
